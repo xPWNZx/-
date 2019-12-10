@@ -1,0 +1,21 @@
+CREATE TABLE cities (
+	city CHAR(20),
+	country CHAR(20),
+	population FLOAT,
+	yearf INT);
+INSERT INTO cities VALUES('Tashken', 'Uzbekistan', 15, 1600);
+INSERT INTO cities VALUES('Dushanbe', 'Tadjikistan', 7, 1671);	
+INSERT INTO cities VALUES('Astana', 'Kazaxstan', 2, 1836);	
+INSERT INTO cities VALUES('NY', 'USA', 10, 1300);	
+INSERT INTO cities VALUES('Paris', 'France', 5, 1423);	
+INSERT INTO cities VALUES('Kiev', 'Ukraine', 1, 1557);	
+INSERT INTO cities VALUES('London', 'Great Britain', 4, 1602);	
+INSERT INTO cities VALUES('Minsk', 'Belarus', 0.8, 1745);	
+INSERT INTO cities VALUES('Warsaw', 'Poland', 0.7, 1201);	
+INSERT INTO cities VALUES('Moskov', 'Russian', 3, 2019);
+
+
+SELECT city, country FROM cities WHERE population >1;
+
+
+SELECT * FROM cities WHERE city LIKE "M%" AND population > 0.5 AND population <1;	
